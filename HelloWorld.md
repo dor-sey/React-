@@ -68,6 +68,25 @@ React.DOM.render(
 > 下列几个DOM属性比较特殊，需要注意：class、for 和 style。
 >> class 和 for 不能在React中使用，因为它们是JavaScript的关键字。取而代之的是className 和 htmlFor。
 ```
-
+React.DOM.h1(
+    {
+        className: "pretty",
+        htmlFor: "me"
+    },
+    "Hello World!"
+)
+```
+>> style属性，不能像以前在HTML中那样使用字符串赋值，需要使用JavaScript对象取而代之。
+```
+React.DOM.h1(
+    {
+        style: {
+            background: "black",
+            color: "white"
+        }
+    },
+    "Hello World!"
+)
 ```
 ## 6. React DevTools 浏览器扩展
+> 可以安装React DevTools浏览器扩展来调试。
