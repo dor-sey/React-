@@ -1,7 +1,9 @@
 # Hello World
 ## 1. 设置
 > 访问[http://reactjs.com](http://reactjs.com)获取React源代码。
+
 ## 2. Hello React World
+
 > 首先编写一个页面
 ```
 <html>
@@ -24,11 +26,13 @@
 </script>
 ```
 > 在chrome开发者工具可以看到会添加```<h1 data-reactid=".0">Hello World!</h1>```
+
 ## 3. 发生了什么
 
 > 使用ReactDOM对象的h1组件，可以通过React.DOM.h1()方法调用，然后调用document.getElementById("app")方法访问，告诉React把组件渲染到页面哪个部分。
 
 ## 4. React.DOM.*
+
 > 可以通过React.DOM对象把各种HTML元素当做React组件来使用。
 
 > React.DOM.*接收参数：
@@ -63,6 +67,7 @@ React.DOM.render(
     document.getElementById("app")
 )
 ```
+
 ## 5. 特殊DOM属性
 
 > 下列几个DOM属性比较特殊，需要注意：class、for 和 style。
@@ -88,5 +93,6 @@ React.DOM.h1(
     "Hello World!"
 )
 ```
+
 ## 6. React DevTools 浏览器扩展
 > 可以安装React DevTools浏览器扩展来调试。
